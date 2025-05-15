@@ -1,0 +1,19 @@
+1. Liste todos os produtos da categoria “Informática”.
+
+2. Exiba os nomes e cidades dos clientes que moram em “Curitiba”.
+
+3. Selecione todos os pedidos feitos após o dia 2025-04-05.
+
+4. Exiba os dados dos produtos cujo preço é maior que 2000.
+
+5. Liste os nomes dos clientes cujo email termina com “@gmail.com”.
+
+6. Mostre os nomes dos clientes e a data de seus pedidos.
+
+7. Exiba o nome do cliente, o nome do produto e a quantidade comprada.
+
+8. Liste os nomes dos produtos comprados por clientes de Maringá.
+
+9. Mostre o nome do cliente e os nomes dos produtos de categoria “Telefonia” que ele comprou.
+
+10. Exiba os pedidos (ID, data) e o nome do cliente que comprou ao menos um produto com preço superior a R$ 3000.

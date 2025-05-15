@@ -1,0 +1,46 @@
+Sistema de Gestão de Biblioteca
+Vamos criar um modelo MER para um sistema simples de gestão de uma biblioteca, onde temos três entidades principais:
+
+Livro
+
+Atributos: ID, título, autor, ano de publicação.
+
+Aluno
+
+Atributos: ID, nome, matrícula, data de nascimento.
+
+Empréstimo
+
+Atributos: ID, data do empréstimo, data de devolução.
+
+Agora, vamos analisar os relacionamentos entre essas entidades:
+
+Empréstimo está relacionado com Aluno e Livro. Um aluno pode pegar vários livros emprestados e um livro pode ser emprestado várias vezes. Esse é um relacionamento m:n (muitos para muitos).
+
+
+
+
+Passo 1: Modelo Entidade-Relacionamento (MER)
+Com base nas entidades e relacionamentos descritos, o diagrama MER ficaria assim:
+
+Livro (ID, título, autor, ano)
+
+Aluno (ID, nome, matrícula, data_nascimento)
+
+Empréstimo (ID, data_emprestimo, data_devolucao)
+
+Relacionamentos:
+
+Aluno pode pegar vários Livros emprestados (Relacionamento m:n).
+
+Empréstimo contém os IDs de Aluno e Livro, representando o relacionamento.
+
+
+Passo 2: Tradução para DDL (Data Definition Language)
+A seguir, vamos traduzir esse modelo MER para a implementação do banco de dados usando SQLite. Vou criar as tabelas de forma que respeitem as restrições do modelo de dados.
+
+Livro: Tabela com os atributos de cada livro (ID, título, autor, ano de publicação).
+
+Aluno: Tabela com os atributos do aluno (ID, nome, matrícula, data de nascimento).
+
+Empréstimo: Tabela que faz a ligação entre os Alunos e os Livros emprestados. Para isso, temos dois campos aluno_id e livro_id, que são chaves estrangeiras que referenciam as tabelas Aluno e Livro, respectivamente.
